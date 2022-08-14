@@ -5,7 +5,7 @@
 //  Created by Артем Савицкий on 09.08.2022.
 //
 
-import Foundation
+
 import UIKit
 
 struct NetworkProperties {

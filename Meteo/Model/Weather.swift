@@ -5,17 +5,17 @@
 //  Created by Артем Савицкий on 09.08.2022.
 //
 
-import Foundation
+
 import UIKit
 
-struct Weather: Codable{
+struct Weather: Codable {
     let id: Int
     let main: String
     let description: String
     let icon: String
 }
 
-struct Main: Codable{
+struct Main: Codable {
     let temp: Float
     let feels_like: Float
     let temp_min: Float
@@ -24,13 +24,13 @@ struct Main: Codable{
     let humidity: Float
 }
 
-struct Sys: Codable{
+struct Sys: Codable {
     let country: String?
     let sunrise: Int?
     let sunset: Int?
 }
 
-struct WeatherModel: Codable{
+struct WeatherModel: Codable {
     let weather: [Weather]
     let main: Main
     let sys: Sys
@@ -40,14 +40,13 @@ struct WeatherModel: Codable{
     let dt_txt: String?
 }
 
-struct ForecastModel: Codable{
+struct ForecastModel: Codable {
     var list: [WeatherModel]
-    let city : City
+    let city: City
 }
 
 struct City: Codable {
     let name: String?
     let country: String?
+    
 }
-
-
